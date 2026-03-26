@@ -825,6 +825,27 @@ p {
     .grid {
         gap: var(--space-xl);
     }
+    
+    /* CRITICAL MOBILE PERFORMANCE OPTIMIZATIONS */
+    body::before {
+        animation: none !important; /* Stops full-screen repaints */
+    }
+    
+    .navbar {
+        backdrop-filter: blur(8px) saturate(120%) !important;
+        -webkit-backdrop-filter: blur(8px) saturate(120%) !important;
+    }
+
+    .glass-card {
+        backdrop-filter: blur(8px) saturate(120%) !important;
+        -webkit-backdrop-filter: blur(8px) saturate(120%) !important;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4) !important; /* Simplify shadow */
+    }
+    
+    h1, h2, h3, .logo, .feature-icon, .stat-number, .btn-primary {
+        animation: none !important; /* Stops background-position animations on text */
+        filter: none !important; /* drop-shadow is extremely heavy on mobile GPUs */
+    }
 }
 
 /* ===== ACCESSIBILITY ===== */
