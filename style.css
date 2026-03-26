@@ -766,9 +766,22 @@ p {
 
 @media (max-width: 768px) {
     :root {
-        --space-xl: 1.5rem;
-        --space-2xl: 2rem;
-        --space-3xl: 3rem;
+        --space-xl: 1rem;
+        --space-2xl: 1.5rem;
+        --space-3xl: 2rem;
+    }
+    
+    html {
+        font-size: 14px;
+    }
+
+    .nav-container {
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        text-align: center;
     }
     
     .nav-menu {
@@ -776,11 +789,37 @@ p {
     }
     
     .hero {
-        padding: var(--space-2xl) var(--space-xl);
+        padding: var(--space-3xl) var(--space-xl);
     }
     
     .section {
         padding: var(--space-2xl) var(--space-xl);
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        width: 100%;
+        padding: var(--space-md) var(--space-lg);
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .glass-card {
+        padding: var(--space-xl);
+    }
+
+    .grid {
+        gap: var(--space-xl);
     }
 }
 
