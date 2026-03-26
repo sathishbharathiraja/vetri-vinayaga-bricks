@@ -61,6 +61,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    background-color: var(--bg-primary);
+    overscroll-behavior-y: none;
 }
 
 body {
@@ -73,8 +75,10 @@ body {
         var(--bg-secondary) 75%,
         var(--bg-primary) 100%
     );
+    background-attachment: fixed;
     color: hsl(0, 0%, 92%);
     min-height: 100vh;
+    min-height: -webkit-fill-available;
     overflow-x: hidden;
     position: relative;
 }
