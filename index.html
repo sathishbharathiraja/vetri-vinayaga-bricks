@@ -328,16 +328,25 @@
             });
         });
 
-        // Parallax scrolling effect
+        // Parallax scrolling effect (Desktop only for performance)
+        let ticking = false;
         window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallaxElements = document.querySelectorAll('.parallax-bg');
+            if (window.innerWidth <= 768) return; // Disable parallax on mobile to prevent lag
             
-            parallaxElements.forEach(element => {
-                const speed = 0.5;
-                element.style.transform = `translateY(${scrolled * speed}px)`;
-            });
-        });
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const scrolled = window.pageYOffset;
+                    const parallaxElements = document.querySelectorAll('.parallax-bg');
+                    
+                    parallaxElements.forEach(element => {
+                        const speed = 0.5;
+                        element.style.transform = `translateY(${scrolled * speed}px)`;
+                    });
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, { passive: true });
 
         // Form submission
         document.getElementById('quote-form').addEventListener('submit', function(e) {
@@ -410,26 +419,28 @@
             observer.observe(section);
         });
 
-        // Add mouse reactive effect
-        document.querySelectorAll('.mouse-reactive').forEach(element => {
-            element.addEventListener('mousemove', (e) => {
-                const rect = element.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
+        // Add mouse reactive effect (Desktop only)
+        if (window.innerWidth > 768) {
+            document.querySelectorAll('.mouse-reactive').forEach(element => {
+                element.addEventListener('mousemove', (e) => {
+                    const rect = element.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    
+                    const deltaX = (x - centerX) / centerX;
+                    const deltaY = (y - centerY) / centerY;
+                    
+                    element.style.transform = `perspective(1000px) rotateY(${deltaX * 5}deg) rotateX(${-deltaY * 5}deg)`;
+                });
                 
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                
-                const deltaX = (x - centerX) / centerX;
-                const deltaY = (y - centerY) / centerY;
-                
-                element.style.transform = `perspective(1000px) rotateY(${deltaX * 5}deg) rotateX(${-deltaY * 5}deg)`;
+                element.addEventListener('mouseleave', () => {
+                    element.style.transform = 'perspective(1000px) rotateY(0deg) rotateX(0deg)';
+                });
             });
-            
-            element.addEventListener('mouseleave', () => {
-                element.style.transform = 'perspective(1000px) rotateY(0deg) rotateX(0deg)';
-            });
-        });
+        }
 
         // Add CSS animations
         const style = document.createElement('style');
