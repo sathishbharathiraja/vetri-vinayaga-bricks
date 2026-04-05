@@ -3,29 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vettri Vinayaga Bricks offers premium quality flyash and hollow bricks for modern construction. Eco-friendly, durable, and reliable bricks in Tamil Nadu.">
-    <meta name="keywords" content="flyash bricks, hollow bricks, solid bricks, construction materials, Vettri Vinayaga Bricks, Keerambur, Tamil Nadu bricks, eco-friendly bricks, building materials">
+    <meta name="description" content="Vettri Vinayaga Bricks — Tamil Nadu's premier manufacturer of flyash bricks, hollow bricks and solid bricks. Eco-friendly, durable, industry-certified construction products.">
+    <meta name="keywords" content="flyash bricks, hollow bricks, solid bricks, construction materials, Vettri Vinayaga Bricks, Keerambur, Tamil Nadu bricks, eco-friendly bricks">
     <meta name="author" content="Vettri Vinayaga Bricks">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://vetrivinayagabricks.com/">
-
-    <!-- Open Graph / Facebook / LinkedIn -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vetrivinayagabricks.com/">
-    <meta property="og:title" content="Vettri Vinayaga Bricks - Premium Flyash & Hollow Bricks">
-    <meta property="og:description" content="Discover premium flyash and hollow bricks engineered for the future. Superior strength, eco-friendly, and cost-effective construction solutions in Tamil Nadu.">
-    <meta property="og:image" content="https://vetrivinayagabricks.com/og-image.jpg">
+    <meta property="og:title" content="Vettri Vinayaga Bricks — Premium Flyash & Hollow Bricks">
+    <meta property="og:description" content="Premium flyash and hollow bricks engineered for the future. Superior strength, eco-friendly, and cost-effective construction solutions in Tamil Nadu.">
+    <title>Vettri Vinayaga Bricks | Premium Construction Materials – Tamil Nadu</title>
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://vetrivinayagabricks.com/">
-    <meta property="twitter:title" content="Vettri Vinayaga Bricks - Premium Quality Bricks">
-    <meta property="twitter:description" content="Discover premium flyash and hollow bricks engineered for the future. Superior strength and eco-friendly construction solutions.">
-    <meta property="twitter:image" content="https://vetrivinayagabricks.com/og-image.jpg">
-
-    <title>Vettri Vinayaga Bricks - Premium Flyash & Hollow Bricks</title>
-    
-    <!-- Structured Data for Local Business -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -41,237 +29,525 @@
         "addressRegion": "Tamil Nadu",
         "postalCode": "637207",
         "addressCountry": "IN"
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "opens": "08:00",
-          "closes": "18:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Sunday",
-          "opens": "09:00",
-          "closes": "14:00"
-        }
-      ]
+      }
     }
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Loader -->
+    <div id="page-loader" class="page-loader">
+        <div class="loader-inner">
+            <div class="loader-logo">VV</div>
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+            <p class="loader-text">Loading Premium Experience...</p>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo">Vettri Vinayaga</a>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#products" class="nav-link">Products</a></li>
-                <li><a href="#features" class="nav-link">Features</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+            <a href="#home" class="logo" id="nav-logo">
+                <span class="logo-icon">⬡</span>
+                <span class="logo-text">Vettri Vinayaga <span class="logo-accent">Bricks</span></span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#products" class="nav-link" data-section="products">Products</a></li>
+                <li><a href="#why-us" class="nav-link" data-section="why-us">Why Us</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
             </ul>
+            <a href="#contact" class="nav-cta">Get Free Quote</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-particles" id="hero-particles"></div>
         <div class="hero-content">
-            <h1 class="hero-title">Vettri Vinayaga Bricks</h1>
-            <p class="hero-subtitle">Revolutionizing construction with premium flyash and hollow bricks engineered for the future</p>
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Tamil Nadu's #1 Premium Brick Manufacturer
+            </div>
+            <h1 class="hero-title">
+                Build with <span class="title-highlight">Strength.</span><br>
+                Build with <span class="title-highlight">Trust.</span>
+            </h1>
+            <p class="hero-subtitle">
+                Premium Flyash & Hollow Bricks engineered for next-generation construction — 
+                eco-friendly, industry-certified, and built to last generations.
+            </p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="10">0</span><span>M+</span>
+                    <span class="hero-stat-label">Bricks Produced</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="500">0</span><span>+</span>
+                    <span class="hero-stat-label">Happy Clients</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="98">0</span><span>%</span>
+                    <span class="hero-stat-label">Satisfaction Rate</span>
+                </div>
+            </div>
             <div class="hero-buttons">
-                <a href="#products" class="btn btn-primary">
-                    <span>Explore Products</span>
+                <a href="#products" class="btn btn-primary" id="explore-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                    Explore Products
                 </a>
-                <a href="#contact" class="btn btn-secondary">
-                    <span>Get Quote</span>
+                <a href="tel:+919486090967" class="btn btn-outline" id="call-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Call Now
                 </a>
             </div>
         </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-line"></div>
+        </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="section">
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        <div class="trust-bar-inner">
+            <div class="trust-item">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>IS Certified Quality</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span>5+ Years Excellence</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
+                <span>100% Eco-Friendly</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7V8z"/></svg>
+                <span>Pan Tamil Nadu Delivery</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <span>500+ Satisfied Clients</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
         <div class="container">
-            <h2 class="fade-in">Why Choose Our Premium Bricks</h2>
-            <div class="grid grid-cols-3">
-                <div class="glass-card feature-card mouse-reactive fade-in">
-                    <div class="feature-icon">🏗️</div>
-                    <h3 class="feature-title">Superior Strength</h3>
-                    <p class="feature-description">Engineered with advanced materials for exceptional durability and load-bearing capacity</p>
+            <div class="section-label reveal">Our Story</div>
+            <h2 class="section-title reveal">Crafting Excellence<br><span class="gradient-text">Since 2019</span></h2>
+            <div class="about-grid">
+                <div class="about-visual reveal">
+                    <div class="about-image-stack">
+                        <div class="about-img-card about-img-main">
+                            <img src="hero-bg.png" alt="Brick manufacturing facility" loading="lazy">
+                        </div>
+                        <div class="about-badge-card">
+                            <div class="about-badge-number">5+</div>
+                            <div class="about-badge-label">Years of Trust</div>
+                        </div>
+                        <div class="about-badge-card about-badge-2">
+                            <div class="about-badge-number">500+</div>
+                            <div class="about-badge-label">Projects Built</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="glass-card feature-card mouse-reactive fade-in">
-                    <div class="feature-icon">🌱</div>
-                    <h3 class="feature-title">Eco-Friendly</h3>
-                    <p class="feature-description">Sustainable manufacturing process with minimal environmental impact</p>
-                </div>
-                <div class="glass-card feature-card mouse-reactive fade-in">
-                    <div class="feature-icon">⚡</div>
-                    <h3 class="feature-title">Fast Construction</h3>
-                    <p class="feature-description">Optimized design for rapid assembly and reduced construction time</p>
+                <div class="about-content reveal">
+                    <p class="about-lead">We are Vettri Vinayaga Bricks — a name synonymous with quality, reliability, and innovation in the Tamil Nadu construction industry.</p>
+                    <p class="about-body">Founded with a vision to modernize construction materials, we combine advanced manufacturing processes with sustainable practices. Every brick that leaves our facility is tested, certified, and crafted to exceed industry standards.</p>
+                    <div class="about-pillars">
+                        <div class="pillar">
+                            <div class="pillar-icon">🏅</div>
+                            <div>
+                                <div class="pillar-title">IS Certified</div>
+                                <div class="pillar-desc">All products meet Bureau of Indian Standards</div>
+                            </div>
+                        </div>
+                        <div class="pillar">
+                            <div class="pillar-icon">🌱</div>
+                            <div>
+                                <div class="pillar-title">Sustainable Manufacturing</div>
+                                <div class="pillar-desc">Flyash recycling reduces landfill waste</div>
+                            </div>
+                        </div>
+                        <div class="pillar">
+                            <div class="pillar-icon">🚚</div>
+                            <div>
+                                <div class="pillar-title">Timely Delivery</div>
+                                <div class="pillar-desc">Bulk orders dispatched within 48 hours</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Partner With Us</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Products Section -->
-    <section id="products" class="section section-parallax">
-        <div class="parallax-bg"></div>
-        <div class="parallax-content">
-            <h2 class="slide-up">Our Premium Products</h2>
-            <div class="grid grid-cols-3">
-                <div class="glass-card scale-in">
-                    <h3>Flyash Bricks</h3>
-                    <p>High-strength, lightweight bricks with excellent thermal properties and environmental benefits</p>
-                    <ul>
-                        <li>Compressive strength: 75+ kg/cm²</li>
-                        <li>Water absorption: < 15%</li>
-                        <li>Dimensional accuracy</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary">Get Quote</a>
+    <section id="products" class="section products-section">
+        <div class="products-bg-accent"></div>
+        <div class="container">
+            <div class="section-label reveal">Our Products</div>
+            <h2 class="section-title reveal">Premium <span class="gradient-text">Brick Range</span></h2>
+            <p class="section-desc reveal">Every brick is manufactured with precision, tested for quality, and delivered with commitment.</p>
+            <div class="products-grid">
+                <!-- Flyash Brick -->
+                <div class="product-card reveal" id="flyash-card">
+                    <div class="product-card-image">
+                        <img src="flyash-brick.png" alt="Flyash Bricks" loading="lazy">
+                        <div class="product-badge">Best Seller</div>
+                    </div>
+                    <div class="product-card-body">
+                        <div class="product-tag">Flyash • IS 12894</div>
+                        <h3 class="product-name">Flyash Bricks</h3>
+                        <p class="product-desc">High-strength, lightweight bricks manufactured using industrial flyash — superior thermal properties, excellent compressive strength, and reduced carbon footprint.</p>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Strength</span>
+                                <div class="spec-bar"><div class="spec-fill" style="width:90%"></div></div>
+                                <span class="spec-value">75+ kg/cm²</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Water Absorption</span>
+                                <div class="spec-bar"><div class="spec-fill" style="width:60%"></div></div>
+                                <span class="spec-value">&lt;15%</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Thermal Rating</span>
+                                <div class="spec-bar"><div class="spec-fill" style="width:85%"></div></div>
+                                <span class="spec-value">Excellent</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-product">Request Quote →</a>
+                    </div>
                 </div>
-                <div class="glass-card scale-in">
-                    <h3>Hollow Bricks</h3>
-                    <p>Innovative hollow design for superior insulation and reduced structural weight</p>
-                    <ul>
-                        <li>Lightweight construction</li>
-                        <li>Thermal insulation</li>
-                        <li>Cost-effective</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary">Get Quote</a>
+                <!-- Hollow Brick -->
+                <div class="product-card reveal product-card-featured" id="hollow-card">
+                    <div class="product-featured-label">Most Popular</div>
+                    <div class="product-card-image">
+                        <img src="hollow-brick.png" alt="Hollow Bricks" loading="lazy">
+                        <div class="product-badge product-badge-featured">Premium</div>
+                    </div>
+                    <div class="product-card-body">
+                        <div class="product-tag">Hollow Block • IS 2185</div>
+                        <h3 class="product-name">Hollow Bricks</h3>
+                        <p class="product-desc">Innovative hollow-core design reduces structural weight by 40% while providing superior thermal and acoustic insulation — ideal for modern construction.</p>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Weight Reduction</span>
+                                <div class="spec-bar"><div class="spec-fill" style="width:80%"></div></div>
+                                <span class="spec-value">40% Lighter</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Insulation</span>
+                                <div class="spec-bar"><div class="spec-fill" style="width:95%"></div></div>
+                                <span class="spec-value">Superior</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Cost Saving</span>
+                                <div class="spec-bar"><div class="spec-fill" style="width:75%"></div></div>
+                                <span class="spec-value">25% Less</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-product btn-product-featured">Request Quote →</a>
+                    </div>
                 </div>
-                <div class="glass-card scale-in">
-                    <h3>Premium Solid Bricks</h3>
-                    <p>Traditional solid bricks enhanced with modern manufacturing techniques</p>
-                    <ul>
-                        <li>Classic durability</li>
-                        <li>Time-tested reliability</li>
-                        <li>Premium finish</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary">Get Quote</a>
+                <!-- Solid Brick -->
+                <div class="product-card reveal" id="solid-card">
+                    <div class="product-card-image">
+                        <img src="solid-brick.png" alt="Solid Bricks" loading="lazy">
+                        <div class="product-badge">Classic</div>
+                    </div>
+                    <div class="product-card-body">
+                        <div class="product-tag">Solid Clay • IS 1077</div>
+                        <h3 class="product-name">Premium Solid Bricks</h3>
+                        <p class="product-desc">Time-tested solid bricks enhanced with modern manufacturing precision — delivering exceptional durability and a premium finish for signature projects.</p>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Durability</span>
+                                <div class="spec-bar"><div class="spec-fill" style="width:100%"></div></div>
+                                <span class="spec-value">100 yrs+</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Compressive</span>
+                                <div class="spec-bar"><div class="spec-fill" style="width:88%"></div></div>
+                                <span class="spec-value">105 kg/cm²</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Finish Quality</span>
+                                <div class="spec-bar"><div class="spec-fill" style="width:92%"></div></div>
+                                <span class="spec-value">Premium</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-product">Request Quote →</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Stats Section -->
-    <section id="stats" class="section">
+    <section class="stats-section">
         <div class="container">
-            <h2 class="fade-in">Our Impact</h2>
             <div class="stats-grid">
-                <div class="glass-card stat-card fade-in">
-                    <div class="stat-number">10M+</div>
-                    <div class="stat-label">Bricks Produced</div>
+                <div class="stat-card reveal">
+                    <div class="stat-icon">🧱</div>
+                    <div class="stat-number counter" data-target="10000000">0</div>
+                    <div class="stat-label">Bricks Manufactured</div>
                 </div>
-                <div class="glass-card stat-card fade-in">
-                    <div class="stat-number">500+</div>
-                    <div class="stat-label">Happy Clients</div>
+                <div class="stat-card reveal">
+                    <div class="stat-icon">🏗️</div>
+                    <div class="stat-number counter" data-target="500">0</div>
+                    <div class="stat-label">Projects Delivered</div>
                 </div>
-                <div class="glass-card stat-card fade-in">
-                    <div class="stat-number">5+</div>
-                    <div class="stat-label">Years Experience</div>
+                <div class="stat-card reveal">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-number counter" data-target="5">0</div>
+                    <div class="stat-label">Years of Excellence</div>
                 </div>
-                <div class="glass-card stat-card fade-in">
-                    <div class="stat-number">98%</div>
+                <div class="stat-card reveal">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-number">98<span>%</span></div>
                     <div class="stat-label">Customer Satisfaction</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section section-parallax">
-        <div class="parallax-bg"></div>
-        <div class="parallax-content">
-            <h2 class="slide-up">About Vettri Vinayaga</h2>
-            <div class="grid grid-cols-2">
-                <div class="glass-card fade-in">
-                    <h3>Our Story</h3>
-                    <p>With over 15 years of excellence in the construction industry, Vettri Vinayaga Bricks has been at the forefront of innovation in brick manufacturing. We combine traditional craftsmanship with cutting-edge technology to deliver superior products.</p>
-                    <p>Our commitment to quality, sustainability, and customer satisfaction has made us a trusted name in the construction sector across Tamil Nadu.</p>
+    <!-- Why Us Section -->
+    <section id="why-us" class="section why-section">
+        <div class="container">
+            <div class="section-label reveal">Why Choose Us</div>
+            <h2 class="section-title reveal">The Vettri Vinayaga<br><span class="gradient-text">Advantage</span></h2>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 class="feature-title">IS Bureau Certified</h3>
+                    <p class="feature-desc">Every product batch is tested and certified by Bureau of Indian Standards ensuring maximum quality assurance.</p>
                 </div>
-                <div class="glass-card fade-in">
-                    <h3>Our Mission</h3>
-                    <p>To revolutionize the construction industry by providing eco-friendly, high-quality brick solutions that meet the evolving needs of modern architecture while preserving our environment for future generations.</p>
-                    <p>We strive to be the leading manufacturer of premium bricks, setting industry standards for quality, innovation, and sustainability.</p>
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <h3 class="feature-title">Superior Strength</h3>
+                    <p class="feature-desc">Advanced manufacturing delivers compressive strength exceeding 75 kg/cm² — built to withstand decades of structural loads.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                    </div>
+                    <h3 class="feature-title">Eco-Friendly Process</h3>
+                    <p class="feature-desc">Flyash recycling from power plants diverts industrial waste, reducing CO₂ emissions by 30% vs traditional brick-making.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3 class="feature-title">Fast Delivery</h3>
+                    <p class="feature-desc">Bulk orders dispatched within 48 hours with our dedicated fleet covering all major districts of Tamil Nadu.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3 class="feature-title">Competitive Pricing</h3>
+                    <p class="feature-desc">Direct manufacturer pricing with no middlemen. Bulk order discounts and flexible payment terms available.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3 class="feature-title">Dedicated Support</h3>
+                    <p class="feature-desc">Our expert team provides end-to-end support from product selection to site delivery, 7 days a week.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section section">
+        <div class="container">
+            <div class="section-label reveal">Testimonials</div>
+            <h2 class="section-title reveal">What Our <span class="gradient-text">Clients Say</span></h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"The flyash bricks from Vettri Vinayaga are outstanding. Our 5-storey building has been standing strong for 3 years with zero structural issues. Quality is unmatched."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div>
+                            <div class="author-name">Rajesh Kumar</div>
+                            <div class="author-role">Civil Contractor, Namakkal</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"We've used hollow bricks for our apartment complex. The thermal insulation reduced AC costs by 20%. Delivery was on time and pricing was very competitive."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SK</div>
+                        <div>
+                            <div class="author-name">Shanmugam K.</div>
+                            <div class="author-role">Real Estate Developer, Erode</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Bulk order of 2 lakh bricks was delivered efficiently across three sites. The quality checks, documentation, and customer service were all top-notch."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PV</div>
+                        <div>
+                            <div class="author-name">Praveen V.</div>
+                            <div class="author-role">Construction Manager, Salem</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section contact-section">
         <div class="container">
-            <h2 class="fade-in">Get In Touch</h2>
-            <div class="grid grid-cols-2">
-                <div class="glass-card fade-in">
-                    <h3>Contact Information</h3>
-                    <div class="contact-info">
-                        <div class="info-item">
-                            <strong>📍 Address:</strong><br>
-                            53VR+M4, Keerambur Medu, Tamil Nadu 637207
+            <div class="section-label reveal">Contact Us</div>
+            <h2 class="section-title reveal">Get a Free <span class="gradient-text">Quote Today</span></h2>
+            <p class="section-desc reveal">Fill in your requirements and we'll get back to you within 2 hours with a custom quote.</p>
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info-panel reveal">
+                    <h3 class="info-panel-title">Get In Touch</h3>
+                    <div class="info-cards">
+                        <a href="tel:+919486090967" class="info-card" id="call-card">
+                            <div class="info-card-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div class="info-card-content">
+                                <div class="info-card-label">Phone / WhatsApp</div>
+                                <div class="info-card-value">+91 94860 90967</div>
+                                <div class="info-card-value">+91 93631 12345</div>
+                            </div>
+                        </a>
+                        <a href="mailto:info@vetrivinayagabricks.com" class="info-card" id="email-card">
+                            <div class="info-card-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div class="info-card-content">
+                                <div class="info-card-label">Email</div>
+                                <div class="info-card-value">info@vetrivinayagabricks.com</div>
+                                <div class="info-card-value">sales@vetrivinayagabricks.com</div>
+                            </div>
+                        </a>
+                        <div class="info-card" id="address-card">
+                            <div class="info-card-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div class="info-card-content">
+                                <div class="info-card-label">Factory Address</div>
+                                <div class="info-card-value">53VR+M4, Keerambur Medu</div>
+                                <div class="info-card-value">Namakkal, Tamil Nadu 637207</div>
+                            </div>
                         </div>
-                        <div class="info-item">
-                            <strong>📱 Phone:</strong><br>
-                            +91 94860 90967<br>
-                            +91 93631 12345
-                        </div>
-                        <div class="info-item">
-                            <strong>📧 Email:</strong><br>
-                            info@vetrivinayagabricks.com<br>
-                            sales@vetrivinayagabricks.com
-                        </div>
-                        <div class="info-item">
-                            <strong>🕐 Hours:</strong><br>
-                            Monday - Saturday: 8:00 AM - 6:00 PM<br>
-                            Sunday: 9:00 AM - 2:00 PM
+                        <div class="info-card" id="hours-card">
+                            <div class="info-card-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div class="info-card-content">
+                                <div class="info-card-label">Working Hours</div>
+                                <div class="info-card-value">Mon – Sat: 8:00 AM – 6:00 PM</div>
+                                <div class="info-card-value">Sunday: 9:00 AM – 2:00 PM</div>
+                            </div>
                         </div>
                     </div>
+                    <a href="https://wa.me/919486090967" target="_blank" class="whatsapp-btn" id="whatsapp-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                        Chat on WhatsApp
+                    </a>
                 </div>
-                <div class="glass-card fade-in">
-                    <h3>Request a Quote</h3>
-                    <form id="quote-form" class="quote-form">
-                        <div class="form-group">
-                            <label class="form-label" for="name">Your Name</label>
-                            <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required>
+                <!-- Quote Form -->
+                <div class="contact-form-panel reveal">
+                    <form id="quote-form" class="quote-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Full Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required autocomplete="name">
+                                <span class="field-error" id="name-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="10-digit mobile number" required autocomplete="tel" maxlength="10">
+                                <span class="field-error" id="phone-error"></span>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label class="form-label" for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="Enter your phone number" required>
+                            <label class="form-label" for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email">
+                            <span class="field-error" id="email-error"></span>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="product">Product Type <span class="required">*</span></label>
+                                <select id="product" name="product" class="form-input" required>
+                                    <option value="">Select product</option>
+                                    <option value="flyash">Flyash Bricks</option>
+                                    <option value="hollow">Hollow Bricks</option>
+                                    <option value="solid">Premium Solid Bricks</option>
+                                    <option value="mixed">Mixed / Multiple</option>
+                                </select>
+                                <span class="field-error" id="product-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="quantity">Quantity (pieces) <span class="required">*</span></label>
+                                <input type="number" id="quantity" name="quantity" class="form-input" placeholder="e.g. 10000" min="100" required>
+                                <span class="field-error" id="quantity-error"></span>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label class="form-label" for="email">Email Address</label>
-                            <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="product">Product Type</label>
-                            <select id="product" name="product" class="form-input" required>
-                                <option value="">Select a product</option>
-                                <option value="flyash">Flyash Bricks</option>
-                                <option value="hollow">Hollow Bricks</option>
-                                <option value="solid">Premium Solid Bricks</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="quantity">Quantity (pieces)</label>
-                            <input type="number" id="quantity" name="quantity" class="form-input" placeholder="Enter quantity" min="1" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="address">Delivery Address</label>
-                            <textarea id="address" name="address" class="form-input" placeholder="Enter your full delivery address" rows="3" required></textarea>
+                            <label class="form-label" for="address">Delivery Address <span class="required">*</span></label>
+                            <textarea id="address" name="address" class="form-input" placeholder="Full delivery address including district and pincode" rows="2" required></textarea>
+                            <span class="field-error" id="address-error"></span>
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="message">Additional Requirements</label>
-                            <textarea id="message" name="message" class="form-input" placeholder="Tell us about your project requirements" rows="3"></textarea>
+                            <textarea id="message" name="message" class="form-input" placeholder="Timeline, site conditions, special requirements..." rows="2"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">
-                            <span>Submit Request</span>
+                        <button type="submit" class="btn btn-submit" id="submit-btn">
+                            <span class="btn-text">Send Quote Request</span>
+                            <span class="btn-loader" style="display:none">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="spin"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                                Sending...
+                            </span>
                         </button>
+                        <p class="form-note">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            Your data is secure. We'll respond within 2 business hours.
+                        </p>
                     </form>
                 </div>
             </div>
@@ -280,259 +556,73 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="grid grid-cols-4">
-                <div class="footer-section">
-                    <h3>Vettri Vinayaga</h3>
-                    <p>Premium quality bricks for modern construction</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Products</h4>
-                    <ul>
-                        <li><a href="#products">Flyash Bricks</a></li>
-                        <li><a href="#products">Hollow Bricks</a></li>
-                        <li><a href="#products">Solid Bricks</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#features">Features</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="tel:+919486090967">Call Us</a></li>
-                        <li><a href="mailto:info@vetrivinayagabricks.com">Email</a></li>
-                        <li><a href="https://wa.me/919486090967">WhatsApp</a></li>
-                    </ul>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#home" class="logo footer-logo">
+                            <span class="logo-icon">⬡</span>
+                            <span class="logo-text">Vettri Vinayaga <span class="logo-accent">Bricks</span></span>
+                        </a>
+                        <p class="footer-tagline">Building Tamil Nadu, one premium brick at a time. Eco-friendly, IS-certified, built to last.</p>
+                        <div class="footer-socials">
+                            <a href="https://wa.me/919486090967" target="_blank" class="social-link" aria-label="WhatsApp">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                            </a>
+                            <a href="tel:+919486090967" class="social-link" aria-label="Phone">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </a>
+                            <a href="mailto:info@vetrivinayagabricks.com" class="social-link" aria-label="Email">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-links-col">
+                        <h4 class="footer-col-title">Products</h4>
+                        <ul class="footer-links">
+                            <li><a href="#products">Flyash Bricks</a></li>
+                            <li><a href="#products">Hollow Bricks</a></li>
+                            <li><a href="#products">Premium Solid Bricks</a></li>
+                            <li><a href="#contact">Custom Orders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <h4 class="footer-col-title">Company</h4>
+                        <ul class="footer-links">
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#why-us">Why Choose Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#contact">Request Quote</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <h4 class="footer-col-title">Contact</h4>
+                        <ul class="footer-links">
+                            <li><a href="tel:+919486090967">+91 94860 90967</a></li>
+                            <li><a href="mailto:info@vetrivinayagabricks.com">info@vetrivinayagabricks.com</a></li>
+                            <li>Keerambur Medu, Namakkal</li>
+                            <li>Tamil Nadu – 637207</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Vettri Vinayaga Bricks. All rights reserved.</p>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Vettri Vinayaga Bricks. All rights reserved. | IS Certified Manufacturer</p>
+                <p>Designed with ❤️ for quality construction</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+    <!-- Scroll to Top -->
+    <button class="scroll-top-btn" id="scroll-top" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
 
-        // Parallax scrolling effect (Desktop only for performance)
-        let ticking = false;
-        window.addEventListener('scroll', () => {
-            if (window.innerWidth <= 768) return; // Disable parallax on mobile to prevent lag
-            
-            if (!ticking) {
-                window.requestAnimationFrame(() => {
-                    const scrolled = window.pageYOffset;
-                    const parallaxElements = document.querySelectorAll('.parallax-bg');
-                    
-                    parallaxElements.forEach(element => {
-                        const speed = 0.5;
-                        element.style.transform = `translateY(${scrolled * speed}px)`;
-                    });
-                    ticking = false;
-                });
-                ticking = true;
-            }
-        }, { passive: true });
+    <!-- Toast Notification -->
+    <div class="toast-container" id="toast-container"></div>
 
-        // Form submission
-        document.getElementById('quote-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Create WhatsApp message using actual newlines
-            const phoneNumber = '919486090967';
-            const message = `🏗️ *New Brick Order Request* 🏗️\n\n` +
-                `👤 *Name:* ${data.name}\n` +
-                `📞 *Phone:* ${data.phone}\n` +
-                `📧 *Email:* ${data.email}\n` +
-                `🚚 *Delivery Address:* ${data.address}\n` +
-                `🏭 *Product:* ${data.product}\n` +
-                `📊 *Quantity:* ${data.quantity} pieces\n` +
-                `📝 *Requirements:* ${data.message || 'None'}\n\n` +
-                `📍 *Vettri Vinayaga Flyash Bricks & Hollow Bricks*\n` +
-                `🏠 *Office:* 53VR+M4, Keerambur Medu, Tamil Nadu 637207`;
-            
-            // encodeURIComponent will handle converting \n to %0A for the URL
-            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, '_blank');
-            
-            // Reset form
-            this.reset();
-            
-            // Show success message
-            const successMessage = document.createElement('div');
-            successMessage.className = 'success-message';
-            successMessage.textContent = 'Quote request submitted successfully! We will contact you soon.';
-            successMessage.style.cssText = `
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-blue) 100%);
-                color: #000;
-                padding: 1rem 2rem;
-                border-radius: 12px;
-                box-shadow: 0 8px 32px rgba(212, 175, 55, 0.3);
-                z-index: 10000;
-                animation: slideInRight 0.5s ease-out;
-            `;
-            
-            document.body.appendChild(successMessage);
-            
-            setTimeout(() => {
-                successMessage.style.animation = 'slideOutRight 0.5s ease-out';
-                setTimeout(() => {
-                    document.body.removeChild(successMessage);
-                }, 500);
-            }, 3000);
-        });
-
-        // Add scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                }
-            });
-        }, observerOptions);
-
-        // Observe all sections
-        document.querySelectorAll('section').forEach(section => {
-            observer.observe(section);
-        });
-
-        // Add mouse reactive effect (Desktop only)
-        if (window.innerWidth > 768) {
-            document.querySelectorAll('.mouse-reactive').forEach(element => {
-                element.addEventListener('mousemove', (e) => {
-                    const rect = element.getBoundingClientRect();
-                    const x = e.clientX - rect.left;
-                    const y = e.clientY - rect.top;
-                    
-                    const centerX = rect.width / 2;
-                    const centerY = rect.height / 2;
-                    
-                    const deltaX = (x - centerX) / centerX;
-                    const deltaY = (y - centerY) / centerY;
-                    
-                    element.style.transform = `perspective(1000px) rotateY(${deltaX * 5}deg) rotateX(${-deltaY * 5}deg)`;
-                });
-                
-                element.addEventListener('mouseleave', () => {
-                    element.style.transform = 'perspective(1000px) rotateY(0deg) rotateX(0deg)';
-                });
-            });
-        }
-
-        // Add CSS animations
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes slideInRight {
-                from {
-                    transform: translateX(100%);
-                    opacity: 0;
-                }
-                to {
-                    transform: translateX(0);
-                    opacity: 1;
-                }
-            }
-            
-            @keyframes slideOutRight {
-                from {
-                    transform: translateX(0);
-                    opacity: 1;
-                }
-                to {
-                    transform: translateX(100%);
-                    opacity: 0;
-                }
-            }
-            
-            .footer {
-                background: var(--space-deep);
-                padding: var(--space-3xl) var(--space-xl) var(--space-xl);
-                margin-top: var(--space-3xl);
-                border-top: 1px solid var(--glass-border);
-            }
-            
-            .footer-section h3,
-            .footer-section h4 {
-                color: hsl(0, 0%, 95%);
-                margin-bottom: var(--space-lg);
-            }
-            
-            .footer-section ul {
-                list-style: none;
-                padding: 0;
-            }
-            
-            .footer-section li {
-                margin-bottom: var(--space-sm);
-            }
-            
-            .footer-section a {
-                color: hsl(0, 0%, 70%);
-                text-decoration: none;
-                transition: color var(--transition-smooth);
-            }
-            
-            .footer-section a:hover {
-                color: var(--nebula-cyan);
-            }
-            
-            .footer-bottom {
-                text-align: center;
-                margin-top: var(--space-2xl);
-                padding-top: var(--space-xl);
-                border-top: 1px solid var(--glass-border);
-                color: hsl(0, 0%, 60%);
-            }
-            
-            .info-item {
-                margin-bottom: var(--space-lg);
-                padding: var(--space-md);
-                background: rgba(255, 255, 255, 0.03);
-                border-radius: 8px;
-                transition: all var(--transition-smooth);
-            }
-            
-            .info-item:hover {
-                background: rgba(255, 255, 255, 0.05);
-                transform: translateX(4px);
-            }
-            
-            .container {
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 0 var(--space-xl);
-            }
-        `;
-        document.head.appendChild(style);
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
