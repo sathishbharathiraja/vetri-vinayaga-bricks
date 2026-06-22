@@ -9,21 +9,26 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
           <div className="lg:col-span-7">
             <div className="text-accent-rust text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              Industrial Manufacturing
+              Premium B2B & B2C Manufacturing
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-display font-extrabold text-text-primary leading-[1.1] mb-6">
               Engineered for the Future of Construction.
             </h1>
-            <p className="text-xl text-text-secondary max-w-2xl mb-10 leading-relaxed font-normal">
-              High-performance flyash and hollow bricks designed for structural integrity, extreme durability, and eco-friendly compliance. Built for enterprise-scale projects.
+            <p className="text-xl text-text-secondary max-w-2xl mb-8 leading-relaxed font-normal">
+              High-performance flyash and hollow bricks designed for structural integrity, extreme durability, and eco-friendly compliance. Built for enterprise-scale projects and independent home builders alike.
             </p>
+
+            <div className="flex items-center gap-2 mb-10 text-sm font-bold text-text-primary bg-corporate-surface border border-gray-200 inline-flex px-4 py-2">
+              <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
+              100% Hassle-Free Transport & Delivery Directly to Your Site
+            </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="#contact" 
                 className="inline-flex justify-center items-center bg-accent-rust hover:bg-accent-rustHover text-white font-bold py-4 px-8 text-lg transition-colors duration-200"
               >
-                Request Corporate Quote
+                Request a Quote
               </a>
               <a 
                 href="#products" 

@@ -77,7 +77,7 @@ const Footer = () => {
 
           {/* Corporate Quote Form (5 columns) */}
           <div className="lg:col-span-5 bg-[#1E293B] border border-[#334155] p-10">
-            <h3 className="text-2xl font-display font-bold text-white mb-8">Request Corporate Quote</h3>
+            <h3 className="text-2xl font-display font-bold text-white mb-8">Request a Quote (B2B & B2C)</h3>
             <form onSubmit={handleSubmit} className="space-y-5">
               
               <div className="grid grid-cols-2 gap-5">
@@ -86,18 +86,18 @@ const Footer = () => {
                   <input type="text" name="name" required value={formData.name} onChange={handleChange} className="w-full bg-[#0F172A] border border-[#334155] text-white px-4 py-3 focus:outline-none focus:border-accent-rust transition-colors" />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Company</label>
+                  <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Company (Optional)</label>
                   <input type="text" name="company" value={formData.company} onChange={handleChange} className="w-full bg-[#0F172A] border border-[#334155] text-white px-4 py-3 focus:outline-none focus:border-accent-rust transition-colors" />
                 </div>
               </div>
 
               <div className="grid grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Direct Phone</label>
+                  <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Phone Number</label>
                   <input type="tel" name="phone" required value={formData.phone} onChange={handleChange} className="w-full bg-[#0F172A] border border-[#334155] text-white px-4 py-3 focus:outline-none focus:border-accent-rust transition-colors" />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Work Email</label>
+                  <label className="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Email Address</label>
                   <input type="email" name="email" required value={formData.email} onChange={handleChange} className="w-full bg-[#0F172A] border border-[#334155] text-white px-4 py-3 focus:outline-none focus:border-accent-rust transition-colors" />
                 </div>
               </div>
