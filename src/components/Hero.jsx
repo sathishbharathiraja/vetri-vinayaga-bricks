@@ -9,13 +9,13 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
           <div className="lg:col-span-7">
             <div className="text-accent-rust text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              Premium B2B & B2C Manufacturing
+              Premium Brick Manufacturing
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-display font-extrabold text-text-primary leading-[1.1] mb-6">
-              Engineered for the Future of Construction.
+              Strong, Reliable Bricks for Your Dream Project.
             </h1>
             <p className="text-xl text-text-secondary max-w-2xl mb-8 leading-relaxed font-normal">
-              High-performance flyash and hollow bricks designed for structural integrity, extreme durability, and eco-friendly compliance. Built for enterprise-scale projects and independent home builders alike.
+              Whether you are building a new family home or a commercial building, our high-quality flyash and hollow bricks provide the perfect foundation. Built to last, easy to work with, and environmentally friendly.
             </p>
 
             <div className="flex items-center gap-2 mb-10 text-sm font-bold text-text-primary bg-corporate-surface border border-gray-200 inline-flex px-4 py-2">
@@ -34,7 +34,7 @@ const Hero = () => {
                 href="#products" 
                 className="inline-flex justify-center items-center bg-transparent border-2 border-text-primary text-text-primary hover:bg-text-primary hover:text-white font-bold py-4 px-8 text-lg transition-colors duration-200"
               >
-                View Technical Specs
+                View Our Bricks
               </a>
             </div>
           </div>

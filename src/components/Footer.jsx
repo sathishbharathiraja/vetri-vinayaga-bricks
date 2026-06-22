@@ -36,11 +36,11 @@ const Footer = () => {
           
           {/* Corporate Details & Map (7 columns) */}
           <div className="lg:col-span-7">
-            <h2 className="text-4xl font-display font-bold text-white mb-10 tracking-tight">Global Infrastructure Solutions</h2>
+            <h2 className="text-4xl font-display font-bold text-white mb-10 tracking-tight">Let's Build Something Great Together</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
               <div>
-                <h4 className="text-accent-rust font-bold uppercase tracking-widest text-sm mb-4">Corporate Headquarters</h4>
+                <h4 className="text-accent-rust font-bold uppercase tracking-widest text-sm mb-4">Our Factory Address</h4>
                 <address className="not-italic text-gray-300 leading-relaxed">
                   53VR+M4, Keerambur Medu<br/>
                   Tamil Nadu 637207<br/>

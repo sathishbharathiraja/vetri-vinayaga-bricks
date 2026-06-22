@@ -7,10 +7,10 @@ const Products = () => {
         
         <div className="mb-16">
           <h2 className="text-4xl font-display font-bold text-text-primary mb-4 tracking-tight">
-            Industrial Specifications
+            Our Products
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl">
-            Precision-engineered masonry units for high-performance structural applications.
+            Choose the perfect brick for your building needs.
           </p>
         </div>
 
@@ -28,25 +28,25 @@ const Products = () => {
               </div>
               
               <p className="text-text-secondary mb-10 text-lg leading-relaxed">
-                High-strength, lightweight composition utilizing Class F flyash. Optimized for load-bearing walls with exceptional thermal resistance.
+                Solid, strong, and reliable. Our flyash bricks are perfect for building sturdy walls that keep your home cool in the summer and safe year-round.
               </p>
 
               <div className="grid grid-cols-2 gap-6 mb-10">
                 <div className="border-l-2 border-accent-rust pl-4">
-                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Compressive Strength</div>
-                  <div className="text-2xl font-bold text-text-primary">75+ <span className="text-lg text-text-secondary font-normal">kg/cm²</span></div>
+                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Strength</div>
+                  <div className="text-2xl font-bold text-text-primary">High Durability</div>
                 </div>
                 <div className="border-l-2 border-accent-rust pl-4">
-                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Water Absorption</div>
-                  <div className="text-2xl font-bold text-text-primary">&lt; 15%</div>
+                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Water Resistance</div>
+                  <div className="text-2xl font-bold text-text-primary">Excellent</div>
                 </div>
                 <div className="border-l-2 border-accent-rust pl-4">
-                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Dry Density</div>
-                  <div className="text-2xl font-bold text-text-primary">1750 <span className="text-lg text-text-secondary font-normal">kg/m³</span></div>
+                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Weight</div>
+                  <div className="text-2xl font-bold text-text-primary">Solid & Heavy-Duty</div>
                 </div>
                 <div className="border-l-2 border-accent-rust pl-4">
-                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Dimensional Tolerance</div>
-                  <div className="text-2xl font-bold text-text-primary">± 2<span className="text-lg text-text-secondary font-normal">mm</span></div>
+                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Shape</div>
+                  <div className="text-2xl font-bold text-text-primary">Perfectly Even</div>
                 </div>
               </div>
             </div>
@@ -66,25 +66,25 @@ const Products = () => {
               </div>
               
               <p className="text-text-secondary mb-10 text-lg leading-relaxed">
-                Advanced cellular geometry engineered to minimize structural dead load while maximizing acoustic and thermal insulation.
+                Smart design with hollow centers. These bricks make your walls lighter, block out outside noise, and maintain comfortable room temperatures.
               </p>
 
               <div className="grid grid-cols-2 gap-6 mb-10">
                 <div className="border-l-2 border-accent-rust pl-4">
-                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Load Reduction</div>
-                  <div className="text-2xl font-bold text-text-primary">~30%</div>
+                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Weight</div>
+                  <div className="text-2xl font-bold text-text-primary">30% Lighter</div>
                 </div>
                 <div className="border-l-2 border-accent-rust pl-4">
-                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Thermal Resistance (R)</div>
-                  <div className="text-2xl font-bold text-text-primary">0.40 <span className="text-lg text-text-secondary font-normal">m²K/W</span></div>
+                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Heat Control</div>
+                  <div className="text-2xl font-bold text-text-primary">Keeps Rooms Cool</div>
                 </div>
                 <div className="border-l-2 border-accent-rust pl-4">
-                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Acoustic Insulation</div>
-                  <div className="text-2xl font-bold text-text-primary">45 <span className="text-lg text-text-secondary font-normal">dB STC</span></div>
+                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Sound Proofing</div>
+                  <div className="text-2xl font-bold text-text-primary">Blocks Noise</div>
                 </div>
                 <div className="border-l-2 border-accent-rust pl-4">
-                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Fire Rating</div>
-                  <div className="text-2xl font-bold text-text-primary">4+ <span className="text-lg text-text-secondary font-normal">Hours</span></div>
+                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Safety</div>
+                  <div className="text-2xl font-bold text-text-primary">Highly Fire Resistant</div>
                 </div>
               </div>
             </div>
