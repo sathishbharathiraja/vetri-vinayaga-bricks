@@ -7,21 +7,24 @@ export default {
   theme: {
     extend: {
       colors: {
-        dark: {
-          bg: '#121212',
-          card: '#1A1A1A',
+        corporate: {
+          bg: '#FFFFFF',
+          surface: '#F8FAFC', // light gray for bento boxes
+          surfaceHover: '#F1F5F9',
         },
         accent: {
-          terracotta: '#D97757',
-          terracottaHover: '#c46244',
+          rust: '#EA580C',
+          rustHover: '#C2410C',
         },
         text: {
-          body: '#F3F4F6',
-          heading: '#FFFFFF',
+          primary: '#0F172A', // slate gray/deep charcoal for extreme readability
+          secondary: '#475569',
+          inverse: '#FFFFFF',
         }
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        display: ['Plus Jakarta Sans', 'sans-serif'],
       }
     },
   },

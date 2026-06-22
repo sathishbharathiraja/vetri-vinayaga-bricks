@@ -1,72 +1,98 @@
 import React from 'react';
 
 const Products = () => {
-  const products = [
-    {
-      title: "Flyash Bricks",
-      description: "High-strength, lightweight bricks with excellent thermal properties and environmental benefits.",
-      specs: ["Compressive strength: 75+ kg/cm²", "Water absorption: < 15%", "Dimensional accuracy"],
-      image: "flyash-brick.png"
-    },
-    {
-      title: "Hollow Bricks",
-      description: "Innovative hollow design for superior insulation and reduced structural weight.",
-      specs: ["Lightweight construction", "Thermal insulation", "Cost-effective"],
-      image: "hollow-brick.png"
-    }
-  ];
-
   return (
-    <section id="products" className="py-24 bg-dark-bg border-t border-neutral-900">
+    <section id="products" className="py-24 bg-corporate-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-text-heading uppercase tracking-wide">
-            Industrial Products
+        
+        <div className="mb-16">
+          <h2 className="text-4xl font-display font-bold text-text-primary mb-4 tracking-tight">
+            Industrial Specifications
           </h2>
-          <div className="mt-4 w-24 h-1 bg-accent-terracotta mx-auto"></div>
+          <p className="text-xl text-text-secondary max-w-3xl">
+            Precision-engineered masonry units for high-performance structural applications.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {products.map((product, index) => (
-            <div 
-              key={index}
-              className="group bg-dark-card border border-neutral-800 p-8 flex flex-col h-full relative overflow-hidden transition-all duration-300 hover:-translate-y-1"
-            >
-              {/* Subtle hover bottom border effect */}
-              <div className="absolute bottom-0 left-0 w-full h-1 bg-accent-terracotta transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
-              
-              <div className="mb-6 h-48 bg-neutral-900 flex items-center justify-center">
-                <img 
-                  src={product.image} 
-                  alt={product.title}
-                  className="max-h-full object-contain p-4 opacity-80 mix-blend-screen"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.parentElement.innerHTML = '<span class="text-neutral-600 text-sm tracking-widest uppercase">Product Image</span>';
-                  }}
-                />
+        {/* Bento Box Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          
+          {/* Flyash Brick Box */}
+          <div className="group bg-corporate-surface border border-gray-200 flex flex-col hover:border-accent-rust transition-colors duration-300">
+            <div className="p-10 flex-grow">
+              <div className="flex justify-between items-start mb-8">
+                <h3 className="text-3xl font-display font-bold text-text-primary">Flyash Bricks</h3>
+                <span className="bg-white border border-gray-200 text-text-primary text-xs font-bold px-3 py-1 uppercase tracking-wider">
+                  Solid Core
+                </span>
               </div>
-
-              <h3 className="text-2xl font-bold text-text-heading mb-4">{product.title}</h3>
-              <p className="text-text-body flex-grow mb-6">{product.description}</p>
               
-              <ul className="space-y-2 mb-8">
-                {product.specs.map((spec, i) => (
-                  <li key={i} className="flex items-center text-sm text-neutral-400">
-                    <span className="w-1.5 h-1.5 bg-accent-terracotta rounded-full mr-3"></span>
-                    {spec}
-                  </li>
-                ))}
-              </ul>
+              <p className="text-text-secondary mb-10 text-lg leading-relaxed">
+                High-strength, lightweight composition utilizing Class F flyash. Optimized for load-bearing walls with exceptional thermal resistance.
+              </p>
 
-              <a 
-                href="#contact" 
-                className="inline-block text-accent-terracotta font-semibold uppercase tracking-wider text-sm hover:text-accent-terracottaHover transition-colors mt-auto"
-              >
-                Inquire Now &rarr;
-              </a>
+              <div className="grid grid-cols-2 gap-6 mb-10">
+                <div className="border-l-2 border-accent-rust pl-4">
+                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Compressive Strength</div>
+                  <div className="text-2xl font-bold text-text-primary">75+ <span className="text-lg text-text-secondary font-normal">kg/cm²</span></div>
+                </div>
+                <div className="border-l-2 border-accent-rust pl-4">
+                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Water Absorption</div>
+                  <div className="text-2xl font-bold text-text-primary">&lt; 15%</div>
+                </div>
+                <div className="border-l-2 border-accent-rust pl-4">
+                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Dry Density</div>
+                  <div className="text-2xl font-bold text-text-primary">1750 <span className="text-lg text-text-secondary font-normal">kg/m³</span></div>
+                </div>
+                <div className="border-l-2 border-accent-rust pl-4">
+                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Dimensional Tolerance</div>
+                  <div className="text-2xl font-bold text-text-primary">± 2<span className="text-lg text-text-secondary font-normal">mm</span></div>
+                </div>
+              </div>
             </div>
-          ))}
+            <div className="h-48 bg-gray-100 border-t border-gray-200 flex items-center justify-center relative overflow-hidden">
+              <span className="text-gray-400 font-semibold tracking-wide uppercase text-sm">Product Render Area</span>
+            </div>
+          </div>
+
+          {/* Hollow Brick Box */}
+          <div className="group bg-corporate-surface border border-gray-200 flex flex-col hover:border-accent-rust transition-colors duration-300">
+            <div className="p-10 flex-grow">
+              <div className="flex justify-between items-start mb-8">
+                <h3 className="text-3xl font-display font-bold text-text-primary">Hollow Bricks</h3>
+                <span className="bg-white border border-gray-200 text-text-primary text-xs font-bold px-3 py-1 uppercase tracking-wider">
+                  Cellular Core
+                </span>
+              </div>
+              
+              <p className="text-text-secondary mb-10 text-lg leading-relaxed">
+                Advanced cellular geometry engineered to minimize structural dead load while maximizing acoustic and thermal insulation.
+              </p>
+
+              <div className="grid grid-cols-2 gap-6 mb-10">
+                <div className="border-l-2 border-accent-rust pl-4">
+                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Load Reduction</div>
+                  <div className="text-2xl font-bold text-text-primary">~30%</div>
+                </div>
+                <div className="border-l-2 border-accent-rust pl-4">
+                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Thermal Resistance (R)</div>
+                  <div className="text-2xl font-bold text-text-primary">0.40 <span className="text-lg text-text-secondary font-normal">m²K/W</span></div>
+                </div>
+                <div className="border-l-2 border-accent-rust pl-4">
+                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Acoustic Insulation</div>
+                  <div className="text-2xl font-bold text-text-primary">45 <span className="text-lg text-text-secondary font-normal">dB STC</span></div>
+                </div>
+                <div className="border-l-2 border-accent-rust pl-4">
+                  <div className="text-sm text-text-secondary uppercase tracking-wider font-semibold mb-1">Fire Rating</div>
+                  <div className="text-2xl font-bold text-text-primary">4+ <span className="text-lg text-text-secondary font-normal">Hours</span></div>
+                </div>
+              </div>
+            </div>
+            <div className="h-48 bg-gray-100 border-t border-gray-200 flex items-center justify-center relative overflow-hidden">
+               <span className="text-gray-400 font-semibold tracking-wide uppercase text-sm">Product Render Area</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

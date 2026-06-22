@@ -10,7 +10,7 @@ const WhatsAppFAB = () => {
       href={whatsappUrl} 
       target="_blank" 
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 bg-accent-terracotta hover:bg-accent-terracottaHover text-white p-4 rounded-full shadow-lg transition-transform hover:scale-110 flex items-center justify-center"
+      className="fixed bottom-6 right-6 z-50 bg-accent-rust hover:bg-accent-rustHover text-white p-4 rounded-full shadow-lg transition-transform hover:scale-110 flex items-center justify-center"
       aria-label="Chat on WhatsApp"
     >
       <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">

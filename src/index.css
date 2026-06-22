@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 body {
-  @apply bg-dark-bg text-text-body font-sans;
+  @apply bg-corporate-bg text-text-primary font-sans;
   min-height: 100vh;
   min-height: -webkit-fill-available;
 }
 
 html {
-  @apply bg-dark-bg;
+  @apply bg-corporate-bg;
   scroll-behavior: smooth;
   overscroll-behavior-y: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply text-text-heading font-bold;
+  @apply text-text-primary font-display font-bold tracking-tight;
 }

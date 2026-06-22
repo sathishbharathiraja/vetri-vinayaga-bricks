@@ -7,7 +7,7 @@ import WhatsAppFAB from './components/WhatsAppFAB';
 
 function App() {
   return (
-    <div className="min-h-screen bg-dark-bg text-text-body font-sans selection:bg-accent-terracotta selection:text-white">
+    <div className="min-h-screen bg-corporate-bg text-text-primary font-sans selection:bg-accent-rust selection:text-white">
       <Header />
       <main>
         <Hero />
