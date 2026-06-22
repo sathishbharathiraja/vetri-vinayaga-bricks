@@ -61,7 +61,7 @@ const Footer = () => {
             {/* Premium Map Embed */}
             <div className="bg-[#1E293B] border border-[#334155] h-72 w-full relative overflow-hidden">
               <iframe 
-                src="https://maps.google.com/maps?q=11.2341,78.1234&z=15&output=embed" 
+                src="https://maps.google.com/maps?q=11.1940969,78.0902944&z=15&output=embed" 
                 width="100%" 
                 height="100%" 
                 frameBorder="0" 
@@ -71,7 +71,7 @@ const Footer = () => {
                 tabIndex="0"
                 title="Vettri Vinayaga Manufacturing Unit Location"
               ></iframe>
-              <div className="absolute bottom-4 left-4 bg-[#0F172A] px-3 py-1 border border-[#334155] text-xs text-gray-400 pointer-events-none">GPS: 11.2341° N, 78.1234° E</div>
+              <div className="absolute bottom-4 left-4 bg-[#0F172A] px-3 py-1 border border-[#334155] text-xs text-gray-400 pointer-events-none">GPS: 11.1940969° N, 78.0902944° E</div>
             </div>
           </div>
 
