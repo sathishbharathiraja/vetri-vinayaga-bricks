@@ -59,9 +59,19 @@ const Footer = () => {
             </div>
 
             {/* Premium Map Embed */}
-            <div className="bg-[#1E293B] border border-[#334155] h-72 w-full flex items-center justify-center relative overflow-hidden">
-              <span className="text-gray-500 uppercase tracking-widest text-sm font-semibold">[ Interactive Map Area ]</span>
-              <div className="absolute bottom-4 left-4 bg-[#0F172A] px-3 py-1 border border-[#334155] text-xs text-gray-400">GPS: 11.2341° N, 78.1234° E</div>
+            <div className="bg-[#1E293B] border border-[#334155] h-72 w-full relative overflow-hidden">
+              <iframe 
+                src="https://maps.google.com/maps?q=11.2341,78.1234&z=15&output=embed" 
+                width="100%" 
+                height="100%" 
+                frameBorder="0" 
+                style={{ border: 0, filter: "contrast(1.2) opacity(0.8)" }} 
+                allowFullScreen="" 
+                aria-hidden="false" 
+                tabIndex="0"
+                title="Vettri Vinayaga Manufacturing Unit Location"
+              ></iframe>
+              <div className="absolute bottom-4 left-4 bg-[#0F172A] px-3 py-1 border border-[#334155] text-xs text-gray-400 pointer-events-none">GPS: 11.2341° N, 78.1234° E</div>
             </div>
           </div>
 
