@@ -20,7 +20,7 @@ const Hero = () => {
 
             <div className="flex items-center gap-2 mb-10 text-sm font-bold text-text-primary bg-corporate-surface border border-gray-200 inline-flex px-4 py-2">
               <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
-              100% Hassle-Free Transport & Delivery Directly to Your Site
+              Direct Site Transport & Delivery Available
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
