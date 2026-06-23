@@ -14,7 +14,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="max-w-2xl pt-10 lg:pt-24 pb-12 lg:pb-24 z-20"
+            className="max-w-2xl pt-10 lg:pt-24 pb-12 lg:pb-24 relative z-20"
           >
             <div className="text-xs md:text-sm font-semibold tracking-[0.2em] text-gray-600 uppercase mb-6">
               Premium Brick Manufacturing
@@ -41,13 +41,13 @@ const Hero = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="relative w-full h-[400px] lg:h-full flex items-end justify-end mt-8 lg:mt-0"
+            className="relative w-full h-[400px] lg:h-full flex items-end justify-end mt-8 lg:mt-0 z-10"
           >
             {/* The image bleeds off the bottom right */}
             <img 
               src="./hero-bricks.png" 
               alt="Premium Bricks Stack" 
-              className="absolute bottom-0 right-0 w-full lg:w-[120%] max-w-2xl object-contain object-bottom drop-shadow-2xl"
+              className="absolute bottom-0 right-0 lg:-right-8 w-full lg:w-[110%] max-w-2xl object-contain object-bottom drop-shadow-2xl"
               style={{ maxHeight: '90%' }}
             />
           </motion.div>
