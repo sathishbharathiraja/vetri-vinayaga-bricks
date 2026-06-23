@@ -12,7 +12,7 @@ describe('LeadForm Component', () => {
     expect(screen.getByLabelText(/Phone Number/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/Material Type/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/Estimated Quantity/i)).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /Submit Request via WhatsApp/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Submit Request/i })).toBeInTheDocument();
   });
 
   it('allows user to type in input fields', async () => {

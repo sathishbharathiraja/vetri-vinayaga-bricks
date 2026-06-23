@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
 const LeadForm = () => {
   const [formData, setFormData] = useState({
@@ -63,18 +63,21 @@ const LeadForm = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="materialType" className="block text-sm font-semibold text-brand-text mb-2">Material Type</label>
-                <select 
-                  id="materialType"
-                  name="materialType" 
-                  value={formData.materialType} 
-                  onChange={handleChange} 
-                  className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-brand-text focus:outline-none focus:ring-2 focus:ring-brand-orange/50 focus:border-brand-orange transition-all appearance-none"
-                >
-                  <option value="Flyash Bricks">Premium Flyash Bricks</option>
-                  <option value="Hollow Bricks">Cellular Hollow Bricks</option>
-                  <option value="Both">Both Types</option>
-                  <option value="Unsure">Not sure yet</option>
-                </select>
+                <div className="relative">
+                  <select 
+                    id="materialType"
+                    name="materialType" 
+                    value={formData.materialType} 
+                    onChange={handleChange} 
+                    className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 pr-10 text-brand-text focus:outline-none focus:ring-2 focus:ring-brand-orange/50 focus:border-brand-orange transition-all appearance-none"
+                  >
+                    <option value="Flyash Bricks">Premium Flyash Bricks</option>
+                    <option value="Hollow Bricks">Cellular Hollow Bricks</option>
+                    <option value="Both">Both Types</option>
+                    <option value="Unsure">Not sure yet</option>
+                  </select>
+                  <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
+                </div>
               </div>
               <div>
                 <label htmlFor="quantity" className="block text-sm font-semibold text-brand-text mb-2">Estimated Quantity</label>
@@ -95,8 +98,7 @@ const LeadForm = () => {
                 type="submit" 
                 className="w-full flex justify-center items-center bg-brand-orange hover:bg-brand-orangeHover text-white font-bold py-4 px-8 rounded-full text-lg transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
               >
-                <Send className="w-5 h-5 mr-2" />
-                Submit Request via WhatsApp
+                Submit Request
               </button>
             </div>
             <p className="text-center text-xs text-brand-muted mt-4">

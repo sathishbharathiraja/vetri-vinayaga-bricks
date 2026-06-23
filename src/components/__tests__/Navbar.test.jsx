@@ -13,9 +13,9 @@ describe('Navbar Component', () => {
 
   it('renders desktop navigation links', () => {
     render(<Navbar />);
-    expect(screen.getByRole('link', { name: /Platform/i })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /Specifications/i })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /Enterprise/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /About Us/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /Our Products/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /Contact/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Request Quote/i })).toBeInTheDocument();
   });
 });

@@ -33,9 +33,9 @@ const Navbar = () => {
           
           {/* Desktop Nav */}
           <div className="hidden md:flex space-x-8 items-center">
-            <a href="#hero" className="text-sm font-medium text-brand-muted hover:text-brand-orange transition-colors">Platform</a>
-            <a href="#products" className="text-sm font-medium text-brand-muted hover:text-brand-orange transition-colors">Specifications</a>
-            <a href="#contact" className="text-sm font-medium text-brand-muted hover:text-brand-orange transition-colors">Enterprise</a>
+            <a href="#hero" className="text-sm font-medium text-brand-muted hover:text-brand-orange transition-colors">About Us</a>
+            <a href="#products" className="text-sm font-medium text-brand-muted hover:text-brand-orange transition-colors">Our Products</a>
+            <a href="#contact" className="text-sm font-medium text-brand-muted hover:text-brand-orange transition-colors">Contact</a>
             <a 
               href="#contact" 
               className="bg-brand-orange hover:bg-brand-orangeHover text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5"
@@ -60,9 +60,9 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 absolute w-full left-0 top-full shadow-lg">
           <div className="px-4 pt-2 pb-6 space-y-1">
-            <a href="#hero" className="block px-3 py-4 text-base font-medium text-brand-text border-b border-gray-50">Platform</a>
-            <a href="#products" className="block px-3 py-4 text-base font-medium text-brand-text border-b border-gray-50">Specifications</a>
-            <a href="#contact" className="block px-3 py-4 text-base font-medium text-brand-text border-b border-gray-50">Enterprise</a>
+            <a href="#hero" className="block px-3 py-4 text-base font-medium text-brand-text border-b border-gray-50">About Us</a>
+            <a href="#products" className="block px-3 py-4 text-base font-medium text-brand-text border-b border-gray-50">Our Products</a>
+            <a href="#contact" className="block px-3 py-4 text-base font-medium text-brand-text border-b border-gray-50">Contact</a>
             <div className="mt-6 px-3">
               <a href="#contact" className="block w-full text-center bg-brand-orange hover:bg-brand-orangeHover text-white px-6 py-3 rounded-full text-base font-bold shadow-sm">
                 Request Quote
