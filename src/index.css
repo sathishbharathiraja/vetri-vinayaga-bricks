@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 body {
-  @apply bg-brand-bg text-brand-text font-sans;
+  @apply bg-[#f4ece1] text-brand-text font-sans;
   min-height: 100vh;
   min-height: -webkit-fill-available;
   overflow-x: hidden;
 }
 
 html {
-  @apply bg-brand-bg;
+  @apply bg-[#f4ece1];
   scroll-behavior: smooth;
   overscroll-behavior-y: none;
   overflow-x: hidden;

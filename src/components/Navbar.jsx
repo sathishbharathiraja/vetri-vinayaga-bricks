@@ -1,26 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <nav 
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm py-4' 
-          : 'bg-transparent py-6'
-      }`}
-    >
+    <nav className="absolute top-0 w-full z-50 pt-4 pb-2">
       <div className="max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-16 w-full">
         <div className="flex justify-between items-center h-20">
           
