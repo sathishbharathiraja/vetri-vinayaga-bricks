@@ -33,8 +33,9 @@ const LeadForm = () => {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label className="block text-sm font-semibold text-brand-text mb-2">Full Name <span className="text-brand-orange">*</span></label>
+                <label htmlFor="name" className="block text-sm font-semibold text-brand-text mb-2">Full Name <span className="text-brand-orange">*</span></label>
                 <input 
+                  id="name"
                   type="text" 
                   name="name" 
                   required 
@@ -45,8 +46,9 @@ const LeadForm = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-semibold text-brand-text mb-2">Phone Number <span className="text-brand-orange">*</span></label>
+                <label htmlFor="phone" className="block text-sm font-semibold text-brand-text mb-2">Phone Number <span className="text-brand-orange">*</span></label>
                 <input 
+                  id="phone"
                   type="tel" 
                   name="phone" 
                   required 
@@ -60,8 +62,9 @@ const LeadForm = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label className="block text-sm font-semibold text-brand-text mb-2">Material Type</label>
+                <label htmlFor="materialType" className="block text-sm font-semibold text-brand-text mb-2">Material Type</label>
                 <select 
+                  id="materialType"
                   name="materialType" 
                   value={formData.materialType} 
                   onChange={handleChange} 
@@ -74,8 +77,9 @@ const LeadForm = () => {
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-semibold text-brand-text mb-2">Estimated Quantity</label>
+                <label htmlFor="quantity" className="block text-sm font-semibold text-brand-text mb-2">Estimated Quantity</label>
                 <input 
+                  id="quantity"
                   type="text" 
                   name="quantity" 
                   value={formData.quantity} 
