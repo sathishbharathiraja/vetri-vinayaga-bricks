@@ -21,10 +21,10 @@ const LeadForm = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-brand-bg border-t border-gray-100">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-12 md:py-16 bg-brand-bg border-t border-gray-100 w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
-        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100">
+        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 max-w-4xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-serif text-brand-text mb-4">Request a Quote</h2>
             <p className="text-brand-muted">Fill out the form below and our team will get back to you with pricing and delivery options.</p>
