@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="font-sans antialiased text-brand-text bg-brand-bg min-h-screen flex flex-col">
+    <div className="font-sans antialiased text-brand-text bg-brand-bg min-h-screen flex flex-col overflow-x-hidden">
       <Navbar />
       
       <main className="flex-grow">

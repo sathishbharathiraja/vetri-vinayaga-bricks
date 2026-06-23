@@ -6,12 +6,14 @@ body {
   @apply bg-brand-bg text-brand-text font-sans;
   min-height: 100vh;
   min-height: -webkit-fill-available;
+  overflow-x: hidden;
 }
 
 html {
   @apply bg-brand-bg;
   scroll-behavior: smooth;
   overscroll-behavior-y: none;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {

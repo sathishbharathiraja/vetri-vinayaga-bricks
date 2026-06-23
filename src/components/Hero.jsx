@@ -49,7 +49,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="relative lg:h-[600px] flex justify-center items-center"
+            className="relative lg:h-[500px] flex justify-center items-center mt-12 lg:mt-0"
           >
             {/* Soft background glow */}
             <div className="absolute inset-0 bg-gradient-to-tr from-brand-orange/20 to-transparent rounded-full blur-3xl opacity-50 mix-blend-multiply"></div>
@@ -59,8 +59,7 @@ const Hero = () => {
               transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
               src="./hero-bricks.png" 
               alt="Premium Floating Bricks" 
-              className="relative z-10 max-w-full h-auto drop-shadow-2xl"
-              style={{ maxHeight: '120%' }}
+              className="relative z-10 w-full max-w-lg h-auto object-contain drop-shadow-2xl"
             />
           </motion.div>
 
