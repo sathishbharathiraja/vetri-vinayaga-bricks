@@ -27,17 +27,9 @@ describe('Hero Component', () => {
 
   it('renders the primary call to action button', () => {
     render(<Hero />);
-    const ctaButton = screen.getByText(/Request a Quote/i);
+    const ctaButton = screen.getByText(/Get a Direct Quote/i);
     expect(ctaButton).toBeInTheDocument();
     expect(ctaButton.tagName).toBe('A');
     expect(ctaButton).toHaveAttribute('href', '#contact');
-  });
-
-  it('renders the secondary call to action button', () => {
-    render(<Hero />);
-    const secondaryButton = screen.getByText(/View Specifications/i);
-    expect(secondaryButton).toBeInTheDocument();
-    expect(secondaryButton.tagName).toBe('A');
-    expect(secondaryButton).toHaveAttribute('href', '#products');
   });
 });

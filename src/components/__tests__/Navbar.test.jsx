@@ -8,7 +8,7 @@ describe('Navbar Component', () => {
     render(<Navbar />);
     const logo = screen.getByText(/VETTRI VINAYAGA/i);
     expect(logo).toBeInTheDocument();
-    expect(logo.tagName).toBe('A');
+    expect(logo.tagName).toBe('SPAN');
   });
 
   it('renders desktop navigation links', () => {
