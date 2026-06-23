@@ -21,7 +21,7 @@ const Navbar = () => {
           : 'bg-transparent py-6'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-16 w-full">
         <div className="flex justify-between items-center h-20">
           
           {/* Logo */}

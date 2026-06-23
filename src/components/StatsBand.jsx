@@ -27,7 +27,7 @@ const itemVariants = {
 const StatsBand = () => {
   return (
     <section className="bg-white border-y border-gray-100 py-16 w-full">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-16 w-full">
         <motion.div 
           variants={containerVariants}
           initial="hidden"

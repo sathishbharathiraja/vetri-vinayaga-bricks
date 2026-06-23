@@ -45,7 +45,7 @@ const cardVariants = {
 const ProductShowcase = () => {
   return (
     <section id="products" className="py-24 bg-brand-bg w-full">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-16 w-full">
         
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif text-brand-text mb-6">Our Products</h2>
