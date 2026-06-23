@@ -22,7 +22,7 @@ const LeadForm = () => {
 
   return (
     <section id="contact" className="py-12 md:py-16 bg-brand-bg border-t border-gray-100 w-full">
-      <div className="max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-16 w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 max-w-4xl mx-auto">
           <div className="text-center mb-10">
