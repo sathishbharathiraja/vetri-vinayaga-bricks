@@ -1,20 +1,24 @@
 import React from 'react';
-import Header from './components/Header';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Products from './components/Products';
+import StatsBand from './components/StatsBand';
+import ProductShowcase from './components/ProductShowcase';
+import LeadForm from './components/LeadForm';
 import Footer from './components/Footer';
-import WhatsAppFAB from './components/WhatsAppFAB';
 
 function App() {
   return (
-    <div className="min-h-screen bg-corporate-bg text-text-primary font-sans selection:bg-accent-rust selection:text-white">
-      <Header />
-      <main>
+    <div className="font-sans antialiased text-brand-text bg-brand-bg min-h-screen flex flex-col">
+      <Navbar />
+      
+      <main className="flex-grow">
         <Hero />
-        <Products />
+        <StatsBand />
+        <ProductShowcase />
+        <LeadForm />
       </main>
+
       <Footer />
-      <WhatsAppFAB />
     </div>
   );
 }

@@ -1,67 +1,70 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="hero" className="pt-32 pb-16 lg:pt-40 lg:pb-24 bg-corporate-bg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Editorial Split */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
-          <div className="lg:col-span-7">
-            <div className="text-accent-rust text-xs font-bold uppercase tracking-[0.2em] mb-4">
-              Premium Brick Manufacturing
+    <section id="hero" className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-brand-bg">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center">
+          
+          {/* Left Column: Text & CTA */}
+          <motion.div 
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="max-w-2xl"
+          >
+            <div className="inline-block bg-brand-orange/10 text-brand-orange text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest mb-6">
+              Premium Manufacturing
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-display font-extrabold text-text-primary leading-[1.1] mb-6">
+            
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-serif text-brand-text leading-[1.05] mb-6">
               Strong, Reliable Bricks for Your Dream Project.
             </h1>
-            <p className="text-xl text-text-secondary max-w-2xl mb-8 leading-relaxed font-normal">
-              Whether you are building a new family home or a commercial building, our high-quality flyash and hollow bricks provide the perfect foundation. Built to last, easy to work with, and environmentally friendly.
+            
+            <p className="text-lg sm:text-xl text-brand-muted mb-10 leading-relaxed max-w-xl">
+              Whether you're building a family home or a commercial complex, our high-performance flyash and hollow bricks provide the perfect, eco-friendly foundation.
             </p>
-
-            <div className="flex items-center gap-2 mb-10 text-sm font-bold text-text-primary bg-corporate-surface border border-gray-200 inline-flex px-4 py-2">
-              <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
-              Direct Site Transport & Delivery Available
-            </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="#contact" 
-                className="inline-flex justify-center items-center bg-accent-rust hover:bg-accent-rustHover text-white font-bold py-4 px-8 text-lg transition-colors duration-200"
+                className="group inline-flex justify-center items-center bg-brand-orange hover:bg-brand-orangeHover text-white font-semibold py-4 px-8 rounded-full text-lg transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
               >
                 Request a Quote
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
               <a 
                 href="#products" 
-                className="inline-flex justify-center items-center bg-transparent border-2 border-text-primary text-text-primary hover:bg-text-primary hover:text-white font-bold py-4 px-8 text-lg transition-colors duration-200"
+                className="inline-flex justify-center items-center bg-white border border-gray-200 text-brand-text hover:bg-gray-50 font-semibold py-4 px-8 rounded-full text-lg transition-all shadow-sm hover:shadow"
               >
-                View Our Bricks
+                View Specifications
               </a>
             </div>
-          </div>
-          
-          <div className="lg:col-span-5 h-[400px] lg:h-[600px] bg-corporate-surface relative flex items-center justify-center overflow-hidden border border-gray-200">
-            <img src="./hero-bricks.png" alt="Premium Stack of Flyash and Hollow Bricks" className="w-full h-full object-cover object-center" />
-          </div>
-        </div>
+          </motion.div>
 
-        {/* Trust Bar */}
-        <div className="border-t border-b border-gray-200 pt-10 pb-20">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
-            <div className="flex flex-col items-center justify-center pt-4 md:pt-0">
-              <svg className="w-10 h-10 text-text-primary mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-              <span className="text-text-primary font-bold text-sm tracking-wide uppercase">ISO 9001:2015 Certified</span>
-            </div>
-            <div className="flex flex-col items-center justify-center pt-8 md:pt-0">
-              <svg className="w-10 h-10 text-text-primary mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <span className="text-text-primary font-bold text-sm tracking-wide uppercase">Eco-Friendly Compliance</span>
-            </div>
-            <div className="flex flex-col items-center justify-center pt-8 md:pt-0">
-              <svg className="w-10 h-10 text-text-primary mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
-              <span className="text-text-primary font-bold text-sm tracking-wide uppercase">IS 1077 Structural Standards</span>
-            </div>
-          </div>
-        </div>
+          {/* Right Column: Floating Image */}
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="relative lg:h-[600px] flex justify-center items-center"
+          >
+            {/* Soft background glow */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-brand-orange/20 to-transparent rounded-full blur-3xl opacity-50 mix-blend-multiply"></div>
+            
+            <motion.img 
+              animate={{ y: [0, -15, 0] }}
+              transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
+              src="./hero-bricks.png" 
+              alt="Premium Floating Bricks" 
+              className="relative z-10 max-w-full h-auto drop-shadow-2xl"
+              style={{ maxHeight: '120%' }}
+            />
+          </motion.div>
 
+        </div>
       </div>
     </section>
   );

@@ -7,24 +7,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        corporate: {
-          bg: '#FFFFFF',
-          surface: '#F8FAFC', // light gray for bento boxes
-          surfaceHover: '#F1F5F9',
-        },
-        accent: {
-          rust: '#EA580C',
-          rustHover: '#C2410C',
-        },
-        text: {
-          primary: '#0F172A', // slate gray/deep charcoal for extreme readability
-          secondary: '#475569',
-          inverse: '#FFFFFF',
+        brand: {
+          bg: '#f8f9fa', // Soft premium off-white
+          orange: '#ea580c', // orange-600
+          orangeHover: '#c2410c', // orange-700
+          text: '#111827', // gray-900
+          muted: '#6b7280', // gray-500
         }
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
-        display: ['Plus Jakarta Sans', 'sans-serif'],
+        serif: ['"Playfair Display"', 'serif'],
       }
     },
   },
